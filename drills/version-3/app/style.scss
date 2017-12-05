@@ -42,8 +42,10 @@ header {
     box-shadow: 0 1px 1px $grey;
     h1 {
         font-size: 2rem;
-        color: $pure-white;
         font-family: "Indie Flower";
+        a {
+            color: $pure-white;
+        }
     }
 }
 
@@ -114,4 +116,14 @@ footer {
 
 .dog {
     @include dog;
+}
+
+input[type=submit] {
+    background-color: $success;
+    padding: 1rem;
+    color: $white;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.03);
+    }
 }

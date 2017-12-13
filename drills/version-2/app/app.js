@@ -28,7 +28,7 @@ app.get("/dogs/new", (request, response) => {
     response.render("new-dog");
 });
 
-app.get("/dog/:id", (request, response) => {
+app.get("/dogs/:id", (request, response) => {
   response.render("dog")
 })
 
